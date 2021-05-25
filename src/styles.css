@@ -1,0 +1,61 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20x;
+}
+
+li {
+  list-style-type: none;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Form */
+.delete_btn {
+  cursor: pointer;
+  
+}
+
+.delete_btn:hover {
+  color: red;
+  font-weight: 500;
+}
+
+/* User table */
+.user-table {
+  width: 100%;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+/* Dataset Table */
+.table-dataset th {
+  background-color: #4c8d74;
+  color: #fff;
+  font-weight: normal;
+}
