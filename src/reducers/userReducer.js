@@ -9,7 +9,6 @@ const userReducer = (state = initialState, action) => {
       const currentState = state;
       currentState.splice(action?.payload, 1)
       return currentState
-
     default:
       return state;
   }

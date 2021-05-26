@@ -18,12 +18,17 @@ function InpForm() {
       email: ""
     },
     onSubmit: (values) => {
+      const _email = values?.email
+      const found = users.find(user => user?.email === _email)
+      if (found) {
+        // raise formik error
+        // show error message
+        return
+      }
       dispatch(addUser(values));
       formik.resetForm();
     }
   });
-
-  // console.log('userData', users);
 
   return (
     <>
@@ -35,6 +40,7 @@ function InpForm() {
           placeholder="name"
           onChange={formik.handleChange}
           value={formik.values.name}
+          required
         />
         <input
           id="email"
@@ -43,6 +49,7 @@ function InpForm() {
           placeholder="email"
           onChange={formik.handleChange}
           value={formik.values.email}
+          required
         />
 
         <button type="submit">Submit</button>

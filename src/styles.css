@@ -59,3 +59,6 @@ input[type="checkbox"] {
   color: #fff;
   font-weight: normal;
 }
+.table-dataset tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
