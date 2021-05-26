@@ -1,10 +1,10 @@
 import React from "react";
 import { useFormik } from "formik";
-import { deleteUser } from "./actions/user";
+import { addUser, deleteUser } from "./actions/user";
 
 //redux
 import { useDispatch, useSelector } from "react-redux";
-import { addUser } from "./actions/user";
+
 import Table from "./Table";
 
 function InpForm() {
